@@ -108,7 +108,7 @@ body.tema-oscuro {
   font-size: 3rem;
   line-height: 1.1;
   margin: 0 0 1rem;
-  color: #dfff2c;
+  color: #394204;
   font-weight: 900;
 }
 body.tema-oscuro .card .card-content .card-titulo {
@@ -135,7 +135,7 @@ body.tema-oscuro .card .card-content .card-titulo {
 }
 .card .card-content .funciones li:hover {
   transform: translateX(8px);
-  color: #c4e859;
+  color: #6e8330;
 }
 body.tema-oscuro .card .card-content .funciones li:hover {
   color: rgb(84.3787234043, 201.6212765957, 128.2255319149);
@@ -211,7 +211,7 @@ body.tema-oscuro .card .card-content .funciones li:hover {
 }
 .card .card-content .cta-peque h3 {
   margin: 0 0 0.4rem;
-  color: #e4e65e;
+  color: #868829;
   font-size: 1.3rem;
 }
 body.tema-oscuro .card .card-content .cta-peque h3 {
