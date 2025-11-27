@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ReciclaSmart — Reciclaje Inteligente</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="tema-claro">
+  <header class="header">
+    <div class="contenedor header-inner">
+      <h1 class="titulo">ReciclaSmart</h1>
+      <button class="boton-tema" id="botonTema" aria-pressed="false">Cambiar Tema</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="card">
+      <div class="card-content">
+        <h2 class="card-titulo">Reciclaje Inteligente</h2>
+        <p class="card-descripcion">
+          ReciclaSmart combina sostenibilidad y tecnología para ayudarte a reciclar de forma más eficiente.  
+          Escanea productos, descubre cómo clasificarlos correctamente y gana recompensas por tus buenos hábitos ecológicos.
+        </p>
+
+        <ul class="funciones">
+          <li> <strong>Escaneo Inteligente:</strong> Analiza códigos para saber cómo reciclar cada producto.</li>
+          <li> <strong>Puntos Verdes Cercanos:</strong> Localiza centros de reciclaje cercanos en un mapa interactivo.</li>
+          <li> <strong>Estadísticas Personales:</strong> Lleva un registro de tu impacto y compite con tus amigos.</li>
+        </ul>
+
+        <div class="acciones">
+          <button class="boton-accion boton-primario">Empieza a Reciclar Ahora</button>
+          <button class="boton-accion boton-secundario" disabled>Próximamente: Modo Comunidad</button>
+        </div>
+
+        <div class="cta-peque">
+          <h3>Únete al movimiento verde </h3>
+          <p>Cada pequeño gesto cuenta. Con ReciclaSmart, convertir el reciclaje en hábito es sencillo y moderno.</p>
+        </div>
+      </div>
+
+      <figure class="card-illustration">
+        <img id="planetImg" src="img/sv.svg" alt="Planeta sonriente - ReciclaSmart" />
+      </figure>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <p>ReciclaSmart © 2025 — Tecnología para un planeta más verde </p>
+    </div>
+  </footer>
+
+  <script>
+    const botonTema = document.getElementById('botonTema');
+    const body = document.body;
+    const planetImg = document.getElementById('planetImg');
+
+    botonTema.addEventListener('click', () => {
+      const esOscuro = body.classList.toggle('tema-oscuro');
+      body.classList.toggle('tema-claro', !esOscuro);
+      botonTema.setAttribute('aria-pressed', String(esOscuro));
+      botonTema.textContent = esOscuro ? 'Tema claro' : 'Cambiar Tema';
+    });
+  </script>
+</body>
+</html>
