@@ -1,0 +1,41 @@
+name: CI Básico del Proyecto
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Comprobar archivos del proyecto
+        run: |
+          echo "Revisando contenido del proyecto..."
+          ls -R
+
+      - name: Comprobación básica de HTML
+        run: |
+          echo "Revisando archivo HTML..."
+          if grep -qi "<html" *.html; then
+            echo "Estructura HTML detectada correctamente"
+          else
+            echo "No se detectó una estructura HTML válida"
+            exit 1
+          fi
+
+      - name: Comprobación básica de CSS
+        run: |
+          echo "Revisando estilos CSS..."
+          if ls *.css 1> /dev/null 2>&1; then
+            echo "Archivo CSS localizado"
+          else
+            echo "No se encontró ningún archivo CSS"
+            exit 1
+          fi
+
+      - name: Proceso finalizado
+        run: echo "Integración completada correctamente"
