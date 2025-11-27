@@ -57,7 +57,7 @@ body.tema-oscuro {
   display: inline-block;
   cursor: pointer;
   font-size: 1rem;
-  background: linear-gradient(90deg, #38B366, #29A3A3);
+  background: linear-gradient(90deg, #48c475, #29A3A3);
   color: #fff;
   box-shadow: 0 6px 18px rgba(18, 102, 82, 0.18);
   background: rgba(255, 255, 255, 0.15);
@@ -108,7 +108,7 @@ body.tema-oscuro {
   font-size: 3rem;
   line-height: 1.1;
   margin: 0 0 1rem;
-  color: #2E8B57;
+  color: #dfff2c;
   font-weight: 900;
 }
 body.tema-oscuro .card .card-content .card-titulo {
@@ -135,7 +135,7 @@ body.tema-oscuro .card .card-content .card-titulo {
 }
 .card .card-content .funciones li:hover {
   transform: translateX(8px);
-  color: #2E8B57;
+  color: #c4e859;
 }
 body.tema-oscuro .card .card-content .funciones li:hover {
   color: rgb(84.3787234043, 201.6212765957, 128.2255319149);
@@ -211,7 +211,7 @@ body.tema-oscuro .card .card-content .funciones li:hover {
 }
 .card .card-content .cta-peque h3 {
   margin: 0 0 0.4rem;
-  color: #2E8B57;
+  color: #e4e65e;
   font-size: 1.3rem;
 }
 body.tema-oscuro .card .card-content .cta-peque h3 {
